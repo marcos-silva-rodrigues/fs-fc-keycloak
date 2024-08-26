@@ -1,1 +1,2 @@
-/keycloak/.docker/
+keycloak/.docker/
+**/node_modules
