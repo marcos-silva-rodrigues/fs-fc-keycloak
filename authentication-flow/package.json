@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "authorization-code": "nodemon --exec ts-node-esm ./authorization-code-flow/src/index.ts"
+    "authorization-code": "nodemon --exec ts-node-esm ./authorization-code-flow/src/index.ts",
+    "implict": "cd implict-flow && npm run dev"
   },
   "workspaces": [
     "implict-flow"
