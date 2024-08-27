@@ -14,6 +14,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    networks:
+      - keycloak-net
   
   db:
     image: mysql:8.0.30-debian
@@ -29,3 +31,9 @@ services:
       interval: 10s
       timeout: 10s
       retries: 3
+    networks:
+      - keycloak-net
+
+networks:
+  keycloak-net:
+    external: true

@@ -5,3 +5,9 @@ services:
       - 3000:3000
     volumes:
       - .:/home/node/app
+    networks:
+      - keycloak-net
+
+networks:
+  keycloak-net:
+    external: true
