@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "authorization-code": "nodemon --exec ts-node-esm ./authorization-code-flow/src/index.ts",
-    "implict": "cd implict-flow && npm run dev"
+    "implict": "cd implict-flow && npm run dev",
+    "hybrid": "cd hybrid-flow && npm run dev"
   },
   "workspaces": [
-    "implict-flow"
+    "implict-flow",
+    "hybrid-flow"
   ],
   "keywords": [],
   "author": "",
